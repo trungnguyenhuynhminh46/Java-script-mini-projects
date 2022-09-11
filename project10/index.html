@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Caculator</title>
+</head>
+<body>
+<div class="container">
+    <div class="tip-caculator">
+        <h3 class="tip-caculator__title">Tip Caculator</h3>
+        <div class="tip-control">
+            <div class="tip-control__title">Bill Amount</div>
+            <div class="tip-control__input">
+                <i class="fa-solid fa-dollar-sign btn"></i>
+                <input type="text" id="bill_amount">
+            </div>
+        </div>
+        <div class="tip-control">
+            <div class="tip-control__title">Number of Guests</div>
+            <div class="tip-control__input">
+                <i class="fa-solid fa-person btn"></i>
+                <input type="text" id="number_of_guests">
+            </div>
+        </div>
+        <div class="tip-control">
+            <div class="tip-control__title">Service Quality</div>
+            <div class="tip-control__input">
+                <select name="tip" id="ratio">
+                    <option disabled selected value="">Choose...</option>
+                    <option value="30">30%-Outstanding</option>
+                    <option value="20">20%-Good</option>
+                    <option value="15">15%-It was ok</option>
+                    <option value="10">10%-Bad</option>
+                    <option value="5">5%-Terrible</option>
+                </select>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="tip-control__caculate">
+            <button class="btn" onclick="caculateTip();">Caculate</button>
+        </div>
+    </div>
+    <div id="alert">
+        Tip $<span class="num">0</span> each
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background-color: #F6F6F0;
+}
+.container{
+    margin: auto;
+}
+#caculator{
+    width: 30vw;
+    padding: 20px;
+    flex-grow: 0.3;
+
+    background-color: #F2F2F2;
+
+    box-shadow: 0 2px 2px 2px #8080808a;
+}
+.caculator__output{
+    padding: 40px 0;
+    margin-bottom: 4px;
+    font-size: 3rem;
+    text-align: end;
+
+    color: gray;
+    background-color: #F5F5F5;
+}
+.caculator__control{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.caculator__button{
+    width: calc(25% - 4px);
+    padding: 15px 20px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #F5F5F5;
+}
+.caculator__button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.caculator__button--full{
+    width: 100%;
+}
+.caculator__button--orange--1{
+    background-color: #FFBA50;
+    opacity: 1;
+}
+.caculator__button--orange--075{
+    background-color: #FFBA50;
+    opacity: 0.75;
+}
+.caculator__button--orange--05{
+    background-color: #FFBA50;
+    opacity: 0.5;
+}
+.caculator__button--orange--025{
+    background-color: #FFBA50;
+    opacity: 0.25;
+}

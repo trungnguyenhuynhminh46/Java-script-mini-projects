@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&family=Poiret+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    background-color: #F5F5F5;
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+.container{
+    width: calc(1240px + 20px + 20px);
+    margin: 0 auto;
+    display: flex;
+    
+}
+header{
+    flex-grow: 1;
+    background-color: white;
+}
+header .container{
+    padding: 20px;
+}
+header nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav h1{
+    font-size: 2rem;
+}
+button{
+    padding: 10px 15px;
+
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #dbdbdb;
+}
+.create-box{
+    display: none;
+    width: 370px;
+    margin: 0 auto;
+    margin-top: 8px;
+    padding: 20px;
+
+    border: 1px solid lightgray;
+    box-shadow: 0 4px 5px 1px rgb(185, 185, 185);
+}
+.create-box h2{
+    text-align: center;
+}
+.create-box__group{
+    margin-top: 4px;
+}
+.create-box__group label{
+    display: block;
+}
+.create-box__group textarea{
+    width: 100%;
+    border-radius: 4px;
+    font-family: inherit;
+    border: 1px solid lightgray;
+    resize: none;
+}
+#flashcards{
+    flex-grow: 1;
+    display: flex;
+    justify-self: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    margin-top: 16px;
+}
+.flashcard{
+    width: calc(25% - 16px);
+    min-height: 200px;
+
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 16px;
+
+    background-color: white;
+    box-shadow: 0 4px 5px 1px rgb(185, 185, 185);
+}
+.flashcard__header{
+    display: flex;
+    padding: 4px 0;
+    justify-content: flex-end;
+    border-bottom: 1px solid red;
+}
+.flashcard__button-hide{
+    padding: 0;
+    margin: 0;
+    margin-right: 8px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    transition: all .3s linear;
+}
+.flashcard__button-hide:hover{
+    background: transparent;
+    color: red;
+}
+.flashcard__question{
+    cursor: pointer;
+    padding: 15px 10px;
+    font-weight:800;
+}
+.flashcard__answer{
+    cursor: pointer;
+    display: none;
+    text-align: center;
+    font-weight:800;
+    color: red;
+}
+.show{
+    display: block;
+}
+@media (max-width: 1280px){
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width: 701px){
+    .flashcard{
+    width: calc(50% - 16px);
+    }
+}
+@media (max-width: 501px){
+    .flashcard{
+    width: calc(100% - 16px);
+    }
+}

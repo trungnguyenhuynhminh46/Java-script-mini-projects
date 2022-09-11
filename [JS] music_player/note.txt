@@ -1,0 +1,27 @@
+//////////////////// Scroll top///////////////////////
+//document.documentElement
+// window.scrollY, document.documentElement.scrollTop
+// gán giá trị cho e.style.attr chính là thêm trực tiếp biến style trên html (inline) --> Phải thêm đơn vị cho giá trị (ví dụ: width + 'px')
+// element.attribute chính là thuộc tính thực của element đó (ngay cả khi biến style k có)
+// offsetWidth, offsetHeight, offsetParent
+/////////////////////////////////////////////////////
+////////////////// Play / pause / seek///////////////
+// element.value lấy giá trị tại thời điểm gọi, element.getAttribute('value') lấy giá trị LÚC KHỞI TẠO
+# Cả khi gán và lấy đều ưu tiên dùng element.value
+// Khi tạo even listener hoặc inline event handler thì khi dùng từ khóa this sẽ được hiểu là element khởi tạo nó
+#Trick: let _this = this;
+/////////////////////////////////////////////////////
+////////////////// CD rotate ////////////////////////
+// Dùng hàm animation = element.animate(keyframes, options);
+// animation.play(), animation.pause();
+/////////////////////////////////////////////////////
+////////////////// Random / Repeat//////////////////
+Học được cách tạo hoán vị (permutation) để tránh lặp bài (nhờ search google)
+////////////////////////////////////////////////////
+///////// Scroll active song into view//////////////
+element.scrollIntoView(...)
+////////////////////////////////////////////////////
+/////////////// Play song when click///////////////
+// Thay vì thêm eventListener vào từng element ta gán eventListener cho container (playlist) và dùng event.target
+
+//////////////////////////////////////////////////

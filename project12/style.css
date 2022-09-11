@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    font-family: 'Fredoka One', cursive;
+    background: conic-gradient(from -90deg at 25% 115%, #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, #0000ff, #0000ff, #0000ff, #0000ff);
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    width: 1280px;
+    padding: 20px;
+    margin: 0 auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .logo{
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+}
+
+header .container .form{
+    flex-grow: 0.15;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+header .container .form #search{
+    flex-grow: 1;
+    padding: 12px;
+
+    background-color: white;
+
+    border: none;
+    outline: none;
+    border-radius: 4px 0 0 4px;
+
+    font-family: inherit;
+}
+header .container .form #search::placeholder{
+    color: lightgray;
+}
+header .container .form .btn-submit{
+    cursor: pointer;
+
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 0 4px 4px 0;
+
+    background-color: lightgray;
+    color: black;
+
+    font-size: 16px;
+    font-family: inherit;
+}
+header .container .form .btn-submit:hover{
+    background-color: rgb(198, 198, 198);
+}
+/* End header */
+.todo-list{
+    flex-grow: 0.4;
+}
+.todo-list__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    margin-bottom: 16px;
+
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+}
+.todo-list__title{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.todo-list__control a{
+    color: lightgray;
+    text-decoration: none;
+}
+.todo-list__control a:hover{
+    color: gray;
+}
+.todo-list__control .done.active{
+    color: #4cd137;
+}
+.todo-list__control .done.active:hover{
+    color: #4cd1379d;
+}

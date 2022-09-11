@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Flash card</title>
+</head>
+<body>
+<style>
+</style>
+<header>
+    <div class="container">
+        <nav>
+            <h1>Flashcards</h1>
+            <div class="control">
+                <button onclick="showCreateBox()">New Card</button>
+                <button onclick="delFlashCards()">Del Cards</button>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container">
+    <div class="create-box">
+        <h2>Create Flashcard</h2>
+        <div class="create-box__group">
+            <label for="question">Question</label>
+            <textarea name="" id="question"></textarea>
+        </div>
+        <div class="create-box__group">
+            <label for="answer">Answer</label>
+            <textarea name="" id="answer"></textarea>
+        </div>
+        <div class="create-box__control">
+            <button onclick="addFlashCard()">Save</button>
+            <button onclick="hideCreateBox()">Close</button>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div id="flashcards">
+    </div>
+</div>
+<script src="main.js"></script>
+<script>
+</script>
+</body>
+</html>

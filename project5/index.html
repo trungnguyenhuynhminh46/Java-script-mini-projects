@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #FEF362;
+        height: 100vh;
+    }
+
+    .counter{
+        flex-grow: 0.4;
+        
+        background-color: #FEFEEB;
+        border: 4px solid black;
+        border-radius: 4px;
+
+        text-align: center;
+
+    }
+
+    .counter__header{
+        padding: 20px;
+
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+    .counter__content{
+        padding: 20px;
+        font-size: 100px;
+        font-weight: 700;
+    }
+
+    .counter__control{
+        margin-bottom: 40px;
+    }
+
+    .counter__control .counter__increase,
+    .counter__control .counter__decrease{
+        padding: 10px 20px;
+
+        background-color: #FEFEEB;
+
+        border: 1px solid black;
+        border-radius: 2px;
+
+    }
+
+    .counter__control .counter__increase:hover,
+    .counter__control .counter__decrease:hover{
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+    </style>
+    <div class="counter">
+        <h1 class="counter__header">
+            Counter
+        </h1>
+        <div class="counter__content">
+            <span id="num">0</span>
+        </div>
+        <div class="counter__control">
+            <button id="increase" class="counter__increase">Increase</button>
+            <button id="decrease" class="counter__decrease">Decrease</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script>
+        const $ = document.querySelector.bind(document);
+        const increaseBtn = $('#increase');
+        const decreaseBtn = $('#decrease');
+        const num = $('#num');
+        increaseBtn.onclick = function(e){
+            let number = Number.parseInt(num.innerText);
+            number++;
+            num.innerText = number;
+        };
+        decreaseBtn.onclick = function(e){
+            let number = Number.parseInt(num.innerText);
+            number--;
+            num.innerText = number;
+        }
+    </script>
+</body>
+</html>

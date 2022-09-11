@@ -1,0 +1,70 @@
+
+@font-face {
+font-family: 'Mumblers Demo';
+src: url('./fonts/MumblersDemoRegular.woff2') format('woff2'),
+    url('./fonts/MumblersDemoRegular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    font-family: "Mumblers Demo";
+    background-color: orange;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    margin: 0 auto;
+}
+.grocery-list{
+    width: 40vw;
+    height: 100vh;
+    padding: 0 60px;
+
+    box-shadow: 10px 20px 6px 5px #80808080;
+    background-color: white;
+}
+.grocery-list__title{
+    text-align: center;
+    padding: 30px 0;
+}
+.grocery-list__input{
+    display: flex;
+    justify-content: center;
+}
+.grocery-list__input i{
+    color: orange;
+    margin-right: 4px;
+    font-size: 20px;
+}
+.grocery-list__input input{
+    border: none;
+    outline: none;
+    flex-grow: 1;
+
+    border-bottom: 2px solid rgb(183, 183, 183);
+    font-size: 16px;
+    font-family: "Mumblers Demo";
+}
+.grocery-list__input input:focus{
+    border-bottom: 2px solid black;
+}
+.grocery-list__content{
+    margin-top: 30px;
+}
+.grocery-list__item{
+    position: relative;
+    font-size: 24px;
+}
+.grocery-list__item::before{
+    content: '-';
+    position: absolute;
+    left: -24px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Image Carousel</title>
+</head>
+<body>
+<div class="container">
+    <div id="carousel">
+        <div data-index = "0" class="fade carousel__image active">
+            <img src="./images/Lam0.jpg" alt="">
+        </div>
+        <div data-index = "1" class="fade carousel__image">
+            <img src="./images/Lam1.jpg" alt="">
+        </div>
+        <div data-index = "2" class="fade carousel__image">
+            <img src="./images/Lam2.jpg" alt="">
+        </div>
+        <div data-index = "3" class="fade carousel__image">
+            <img src="./images/Lam3.jpg" alt="">
+        </div>
+        <div data-index = "4" class="fade carousel__image">
+            <img src="./images/Lam4.jpg" alt="">
+        </div>
+        <div data-index = "5" class="fade carousel__image">
+            <img src="./images/Lam5.jpg" alt="">
+        </div>
+        <div data-index = "6" class="fade carousel__image">
+            <img src="./images/Lam6.jpg" alt="">
+        </div>
+        <div data-index = "7" class="fade carousel__image">
+            <img src="./images/Lam7.jpg" alt="">
+        </div>
+        <button class="btn-prev" onclick="toPrevImage(1)">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <button class="btn-next" onclick="toNextImage(1)">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+        <nav class="carousel__nav">
+            <a href="#" data-index = "0" onclick="activeImage(0); return false;" class="carousel-nav__item active">
+                <i class="fa-solid fa-circle"></i>
+            </a>
+            <a href="#" data-index = "1" onclick="activeImage(1); return false;" class="carousel-nav__item">
+                <i class="fa-solid fa-circle"></i>
+            </a>
+            <a href="#" data-index = "2" onclick="activeImage(2); return false;" class="carousel-nav__item">
+                <i class="fa-solid fa-circle"></i>
+            </a>
+            <a href="#" data-index = "3" onclick="activeImage(3); return false;" class="carousel-nav__item">
+                <i class="fa-solid fa-circle"></i>
+            </a>
+            <a href="#" data-index = "4" onclick="activeImage(4); return false;" class="carousel-nav__item">
+                <i class="fa-solid fa-circle"></i>
+            </a>
+            <a href="#" data-index = "5" onclick="activeImage(5); return false;" class="carousel-nav__item">
+                <i class="fa-solid fa-circle"></i>
+            </a>
+            <a href="#" data-index = "6" onclick="activeImage(6); return false;" class="carousel-nav__item">
+                <i class="fa-solid fa-circle"></i>
+            </a>
+            <a href="#" data-index = "7" onclick="activeImage(7); return false;" class="carousel-nav__item">
+                <i class="fa-solid fa-circle"></i>
+            </a>
+        </nav>
+    </div>
+</div>
+
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Caculator</title>
+</head>
+<body>
+<div class="container">
+    <div class="caculator" id="caculator">
+        <div class="caculator__output">0</div>
+        <div class="caculator__control">
+            <div class="caculator__button" onclick="press('1');">1</div>
+            <div class="caculator__button" onclick="press('2');">2</div>
+            <div class="caculator__button" onclick="press('3');">3</div>
+            <div class="caculator__button caculator__button--orange--1" onclick="press('+');">+</div>
+            <div class="caculator__button" onclick="press('4');">4</div>
+            <div class="caculator__button" onclick="press('5');">5</div>
+            <div class="caculator__button" onclick="press('6');">6</div>
+            <div class="caculator__button caculator__button--orange--075" onclick="press('-');">-</div>
+            <div class="caculator__button" onclick="press('7');">7</div>
+            <div class="caculator__button" onclick="press('8');">8</div>
+            <div class="caculator__button" onclick="press('9');">9</div>
+            <div class="caculator__button 
+            caculator__button--orange--05" onclick="press('*');">*</div>
+            <div class="caculator__button" onclick="press('.');">.</div>
+            <div class="caculator__button" onclick="press('0');">0</div>
+            <div class="caculator__button" onclick="erase();">C</div>
+            <div class="caculator__button caculator__button--orange--025" onclick="press('/');">/</div>
+            <!-- = -->
+            <div class="caculator__button caculator__button--full" onclick="equal();">=</div>
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

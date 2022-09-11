@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Luckiest Guy', cursive;
+    height: 100vh;
+    background-color: lightgray;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1280px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    background-color: tomato;
+    color: white;
+}
+.container .logo{
+    font-size: 32px;
+}
+.container nav{
+    display: flex;
+    justify-content: flex-start;
+}
+.container .nav__item{
+    display: block;
+    cursor: pointer;
+    padding: 32px 16px;
+
+    font-size: 20px;
+}
+.container .nav__item.active{
+    position: relative;
+}
+.container .nav__item.active::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    height: 4px;
+    width: calc(100% - 32px);
+
+    background-color: white;
+    transform: translate(-50%, -27px);
+}
+section.content{
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 60px;
+}
+section.content .question{
+    flex-grow: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 100px;
+    padding-top: 210px;
+    padding-bottom: 210px;
+    margin-right: 10px;
+
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 2px gray;
+    background-color: white;
+
+}
+section.content .question h1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+section.content .answers{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+section.content .answer__item{
+    flex-grow: 1;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 2px gray;
+    background-color: white;
+    color: white;
+    font-size: 150px;
+}
+section.content .answer__item:not(:last-child){
+    margin-bottom: 10px;
+}
+section.content .answer__item:nth-child(1){
+    background-color: #e74c3c;
+}
+section.content .answer__item:nth-child(2){
+    background-color: #1abc9c;
+}
+section.content .answer__item:nth-child(3){
+    background-color: #9b59b6;
+}

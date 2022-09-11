@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Math for kids</title>
+</head>
+<body>
+<audio id="wrong_audio" src="wrong.mp3"></audio>
+<header>
+    <div class="container">
+        <a href="#" class="logo" onclick="return false;">
+            <i class="fa-solid fa-trophy"></i>
+            Math for kids</a>
+        <nav>
+            <a href="?operation=plus" class="nav__item">Add</a>
+            <a href="?operation=minus" class="nav__item">Subtract</a>
+            <a href="?operation=multiply" class="nav__item">Multiply</a>
+            <a href="?operation=divide" class="nav__item">Divide</a>
+        </nav>
+    </div>
+</header>
+<section class="content">
+    <div class="question">
+        <h1 class="num1" style="color: #e74c3c;">1</h1>
+        <h1 class="operation" style="color: #3498db">+</h1>
+        <h1 class="num2" style="color: #f1c40f">2</h1>
+        <h1 class="equal" style="color: #8e44ad">=</h1>
+        <h1 style="color: #95a5a6">?</h1>
+    </div>
+    <div class="answers">
+        <div class="answer__item">3</div>
+        <div class="answer__item">2</div>
+        <div class="answer__item">-1</div>
+    </div>
+</section>
+<script src="main.js"></script>
+</body>
+</html>
